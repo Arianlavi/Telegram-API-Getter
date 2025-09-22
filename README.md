@@ -24,7 +24,7 @@ A powerful Python tool with GUI to automatically generate Telegram API credentia
 ## 🖥️ Screenshots
 
 ![App Screenshot](screenshot.png)
-*Note: Replace with your actual screenshot.*
+
 
 ---
 
