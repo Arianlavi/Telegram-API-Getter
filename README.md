@@ -134,5 +134,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Created by **Arian Lavi**
 
-* GitHub: [yourusername](https://github.com/arianlavi)
-* Telegram: [@yourtelegram](https://t.me/Arianlvi)
+* GitHub: [Arianlavi](https://github.com/arianlavi)
+* Telegram: [@Arianlvi](https://t.me/Arianlvi)
