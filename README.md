@@ -33,7 +33,7 @@ A powerful Python tool with GUI to automatically generate Telegram API credentia
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/telegram-api-getter.git
+git clone https://github.com/Arianlavi/telegram-api-getter.git
 cd telegram-api-getter
 ```
 
