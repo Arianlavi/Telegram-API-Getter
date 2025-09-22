@@ -1,0 +1,4 @@
+PyQt5==5.15.9
+requests==2.31.0
+beautifulsoup4==4.12.2
+pyperclip==1.8.2
