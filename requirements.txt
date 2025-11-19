@@ -1,4 +1,18 @@
-PyQt5==5.15.9
-requests==2.31.0
-beautifulsoup4==4.12.2
-pyperclip==1.8.2
+# Core & Networking
+requests
+beautifulsoup4
+
+# GUI Version
+PyQt5
+pyperclip
+
+# CLI Version
+selenium
+webdriver-manager
+rich
+pyfiglet
+colorama
+
+# Utilities
+urllib3
+certifi
