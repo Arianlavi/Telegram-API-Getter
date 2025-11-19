@@ -1,98 +1,131 @@
-# Telegram API Getter - Ultimate Version
+<div align="center">
 
-![Telegram API Getter](https://img.shields.io/badge/Status-Active-brightgreen)
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![PyQt5](https://img.shields.io/badge/PyQt5-GUI-lightgrey)
+# 🚀 Telegram API Getter: The Ultimate Suite
+### Automated Credential Extraction (`api_id` & `api_hash`)
 
-A powerful Python tool with GUI to automatically generate Telegram API credentials (API ID & API Hash) for your applications. Designed for developers, testers, and Telegram enthusiasts.
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
+![PyQt5](https://img.shields.io/badge/GUI-PyQt5-green?style=for-the-badge&logo=qt&logoColor=white)
+![Selenium](https://img.shields.io/badge/CLI-Selenium%20%2B%20Rich-orange?style=for-the-badge&logo=selenium&logoColor=white)
+
+<p align="center">
+  <b>A professional-grade toolkit to generate Telegram API credentials instantly.</b><br>
+  <i>Choose your weapon: The robust <b>Desktop GUI</b> or the lightning-fast <b>Terminal CLI</b>.</i>
+</p>
+
+<img src="logo.png" width="518" alt="Logo"/>
+
+</div>
 
 ---
 
 ## 🚀 Features
 
-* Send confirmation code to Telegram accounts
-* Sign in with verification code
-* Automatically create Telegram applications
-* Retrieve API credentials (API ID & API Hash) with advanced extraction methods
-* JavaScript-like automation methods for robustness
-* User-friendly PyQt5 GUI
-* Activity log for monitoring the process
-* Copy credentials to clipboard with one click
+Whether you prefer a visual interface or a command-line tool, this repository has you covered.
+
+| Feature | 🖥️ GUI Version (v1) | ⚡ CLI Version (v2) |
+| :--- | :---: | :---: |
+| **Core Engine** | `Requests` + `BeautifulSoup` | `Selenium WebDriver` |
+| **Interface** | PyQt5 Desktop App | Rich Terminal UI |
+| **OS Support** | Windows / Linux / Mac | **Cross-Platform** (Anywhere) |
+| **Best For** | Casual Users & Visual Feedback | Developers & Headless Servers |
+| **Automation** | Standard HTTP Requests | Full Browser Emulation |
 
 ---
 
-## 🖥️ Screenshot v1
+## 🖥️ Mode 1: GUI Application (PyQt5)
 
-![App Screenshot](screenshot.png)
+The classic, user-friendly desktop application. Perfect for users who want a "point-and-click" experience.
 
+### ✨ Highlights
+* **Visual Dashboard:** Clean material-design inspired interface.
+* **Log Monitor:** Real-time activity logging window.
+* **One-Click Copy:** Instantly copy `api_id` and `api_hash` to clipboard.
+* **Session Management:** Handles login flows with visual prompts.
+
+### 📸 Screenshots v1
+<p align="center">
+  <img src="screenshot.png" alt="GUI Main Screen" width="45%" />
+</p>
 
 ---
 
-## 🖥️ Screenshot v2
+## ⚡ Mode 2: CLI Tool (Selenium + Rich)
 
-![App Screenshot](screenshotv2.png)
+**NEW!** A high-performance, It uses `Selenium` to emulate a real browser (bypassing complex bot detections) and `Rich` for a beautiful terminal output.
 
 
----
+
+### ✨ Highlights
+* **Browser Emulation:** Uses a real Chrome instance to mimic human behavior perfectly.
+* **Smart Waits:** No fixed delays; the bot reacts instantly to page loads.
+* **Headless Ready:** Can be configured to run on servers without a monitor.
+
+### 📸 Screenshots v2
+<p align="center">
+  <img src="screenshotv2.png" alt="GUI Processing" width="45%" />
+</p>
+
+### 🚀 Usage (CLI)
+After installing dependencies, simply run:
+```bash
+python main-v2.py
+````
+
+*(Note: Ensure you rename the CLI script to `main-v2.py` or similar)*
+
+-----
 
 ## 💻 Installation
 
-1. Clone the repository:
+To run either version, follow these steps:
+
+### 1\. Clone the Repository
 
 ```bash
 git clone https://github.com/Arianlavi/telegram-api-getter.git
 cd telegram-api-getter
 ```
 
-2. Install dependencies:
+### 2\. Install Dependencies
+
+We have separated dependencies for clarity.
+
+**For GUI Version (PyQt5):**
 
 ```bash
-pip install -r requirements.txt
+pip install PyQt5 requests beautifulsoup4 pyperclip
 ```
 
-Dependencies include:
-
-* `PyQt5`
-* `requests`
-* `beautifulsoup4`
-* `pyperclip`
-
----
-
-## ⚡ Usage
-
-Run the application:
+**For CLI Version (Selenium/Rich):**
 
 ```bash
-python main.py
+pip install selenium webdriver-manager rich pyfiglet
 ```
 
-Steps:
+> **Pro Tip:** You can install everything at once:
+>
+> ```bash
+> pip install -r requirements.txt
+> ```
+>
+> *(Ensure your `requirements.txt` includes all the libraries above)*
 
-1. Enter your Telegram phone number.
-2. Provide app details: title, short name, URL, and platform.
-3. Click **Start Process**.
-4. Enter the verification code sent to your Telegram.
-5. Wait for the tool to create the app and retrieve API credentials.
-6. Copy the credentials with one click.
-
----
+-----
 
 ## 🛠️ Code Overview
 
-The tool is built with:
+The project is structured with modularity in mind:
 
-* **Python 3**
-* **PyQt5** for GUI
-* **Requests** for HTTP interactions
-* **BeautifulSoup** for HTML parsing
-* Advanced logging and error handling
+  * **`main.py` (GUI):** Handles the Event Loop, UI rendering (PyQt5), and HTTP requests logic.
+  * **`main-v2.py` (CLI):** Orchestrates the Selenium WebDriver, handles the DOM interactions, and renders the Rich TUI.
+  * **Advanced Logging:** Both versions utilize structured logging to help debug login issues.
 
----
+-----
 
-## Support & Donations
-If you find PyPack helpful, please consider supporting the project with a donation! Your contributions help keep the project alive and improve its features.
-You can send donations to the following wallet addresses. **Always verify the address before sending!**
+## 💸 Support & Donations
+
+If this tool saved you time or helped your project, consider supporting the development\! Your contributions help maintain the repo and add new features.
 
 | Cryptocurrency | Address | Network |
 |---------------|---------|---------|
@@ -100,46 +133,35 @@ You can send donations to the following wallet addresses. **Always verify the ad
 | **Ethereum (ETH) / USDT** | `0x66D74F4b7527ea9eD5BA5e2E02fa93fB7a90325d` | ERC-20 |
 | **Solana (SOL)** | `9irdHFdeWVb6cnu8HTdKAs3Lg1PD8HiQQLhVHLSAQq6X` | Solana |
 
-**Important**:
-- **Replace the above addresses with your own wallet addresses.**
-- Copy-paste addresses exactly to avoid errors.
-- Donations are non-refundable, so double-check before sending.
-- For security, use a trusted wallet like [Exodus](https://exodus.com) or [Trust Wallet](https://trustwallet.com).
+> **⚠️ Important:**
+>
+>   * Always **double-check** the address before sending.
+>   * Donations are non-refundable.
+>   * Use a secure wallet like [Exodus](https://exodus.com) or [Trust Wallet](https://trustwallet.com).
 
-### Other Ways to Support
-- Give the project a ⭐ on GitHub.
-- Share PyPack with your friends or on social media.
-- Contribute by submitting pull requests or reporting issues.
+### ⭐ Other Ways to Support
 
----
+  * Star this repository on GitHub.
+  * Open an Issue if you find a bug.
+  * Submit a Pull Request to improve the code.
+
+-----
 
 ## ⚠️ Disclaimer
 
-* Use responsibly. Only for your own Telegram accounts.
-* Do not use for spam, phishing, or any illegal activity.
-* Telegram may restrict accounts if abused.
+  * **Educational Use Only:** This tool is intended for developers to automate their own workflow.
+  * **Terms of Service:** Use this responsibly and in accordance with Telegram's ToS.
+  * **No Liability:** The creator is not responsible for any account limitations caused by misuse.
 
----
-
-## 💡 Contributing
-
-Contributions are welcome!
-
-* Fork the repository
-* Create a new branch
-* Submit a pull request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
+-----
 
 ## 📬 Contact
 
 Created by **Arian Lavi**
 
-* GitHub: [Arianlavi](https://github.com/arianlavi)
-* Telegram: [@Arianlvi](https://t.me/Arianlvi)
+  * 🌐 GitHub: [Arianlavi](https://github.com/arianlavi)
+  * ✈️ Telegram: [@Arianlvi](https://t.me/Arianlvi)
+
+<div align="center"\>
+<sub\>Built with 💙 and Python</sub\>
+</div\>
