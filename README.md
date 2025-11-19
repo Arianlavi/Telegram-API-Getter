@@ -45,7 +45,7 @@ The classic, user-friendly desktop application. Perfect for users who want a "po
 
 ### 📸 Screenshots v1
 <p align="center">
-  <img src="screenshot.png" alt="GUI Main Screen" width="60%" />
+  <img src="screenshot.png" alt="GUI Main Screen" width="80%" />
 </p>
 
 ---
@@ -63,7 +63,7 @@ The classic, user-friendly desktop application. Perfect for users who want a "po
 
 ### 📸 Screenshots v2
 <p align="center">
-  <img src="screenshotv2.png" alt="GUI Processing" width="60%" />
+  <img src="screenshotv2.png" alt="GUI Processing" width="90%" />
 </p>
 
 ### 🚀 Usage (CLI)
